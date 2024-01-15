@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+[RequireComponent(typeof(Animator))]
 public class Player : MonoBehaviour
 {
     PlayerInputActions inputActions;
@@ -19,6 +20,9 @@ public class Player : MonoBehaviour
     /// </summary>
     public float moveSpeed = 0.01f;
 
+    Animator anim;
+    readonly int InputY_String = Animator.StringToHash("InputY");
+
     // InputSystem : 유니티의 새로운 입력 방식
     // Event-driven 방식 적용.
 
@@ -26,6 +30,7 @@ public class Player : MonoBehaviour
     private void Awake()
     {
         inputActions = new PlayerInputActions();            // 인풋 액션 생성
+        anim = GetComponent<Animator>();
     }
 
     // 이 스크립트가 포함된 게임 오브젝트가 활성화되면 호출된다.
@@ -47,6 +52,8 @@ public class Player : MonoBehaviour
         inputActions.Player.Fire.performed -= OnFire;       // Player액션맵의 Fire액션에서 OnFire함수를 연결해제
         inputActions.Player.Disable();                      // Player액션맵을 비활성화
     }
+
+    
 
     /// <summary>
     /// Fire액션이 발동했을 때 실행 시킬 함수
@@ -76,6 +83,9 @@ public class Player : MonoBehaviour
         //transform.position += Vector3.right;
 
         //transform.position = (Vector3)dir;    // 이 게임 오브젝트의 위치를 현재 위치에서 inputDir 방향으로 움직여라
+        
+        //anim.SetFloat("InputY", inputDir.y);
+        anim.SetFloat(InputY_String, inputDir.x);    
     }
     // 이 스크립트가 포함된 게임 오브젝트의 첫번째 Update함수가 실행되기 직전에 호출된다.
     private void Start()
