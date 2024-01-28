@@ -1,16 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.RuleTile.TilingRuleOutput;
 
-public class Bullet : MonoBehaviour
+public class Bullet : RecycleObject
 {
-    // 시작하자마자 계속 오른쪽으로 초속 7로 움직이게 만들기
-
     public float moveSpeed = 7.0f;
+
+    
+    public float lifeTime = 10.0f;
+
+    
+
+    protected override void OnEnable()
+    {
+        base.OnEnable();
+        StartCoroutine(LifeOver(lifeTime));
+    }
 
     private void Update()
     {
-        transform.Translate(Time.deltaTime * moveSpeed * Vector2.up);
-        transform.Translate(Vector2.up * Time.deltaTime * moveSpeed);
+        transform.Translate(Time.deltaTime * moveSpeed * Vector2.up);    
+        
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+
+        
+        gameObject.SetActive(false);    
     }
 }

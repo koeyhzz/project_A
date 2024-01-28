@@ -166,7 +166,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Boss 0
+      name: Enemies_0
       rect:
         serializedVersion: 2
         x: 0
@@ -177,17 +177,35 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 25, y: 33}
+        - {x: -24, y: 33}
+        - {x: -33, y: 19}
+        - {x: -33, y: -27}
+        - {x: -15, y: -33}
+        - {x: 27, y: -33}
+        - {x: 33, y: -19}
+        - {x: 33, y: 23}
+      - - {x: -21, y: -6}
+        - {x: -21, y: -7}
+        - {x: -19, y: -9}
+        - {x: -16, y: -9}
+        - {x: -13, y: -6}
+      - - {x: 13, y: -6}
+        - {x: 16, y: -9}
+        - {x: 19, y: -9}
+        - {x: 22, y: -6}
+        - {x: 22, y: -5}
       tessellationDetail: 0
       bones: []
-      spriteID: d377660cda52d6e10800000000000000
-      internalID: 2192450021786810173
+      spriteID: 82536001ea88d104cb4c743cbf1c9ce6
+      internalID: -791339951
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss 1
+      name: Enemies_1
       rect:
         serializedVersion: 2
         x: 67
@@ -201,14 +219,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89acfd8bbbf766790800000000000000
-      internalID: -7537196482120660328
+      spriteID: 17801d281452e904bb744178e9f50fc2
+      internalID: 1555298197
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss 2
+      name: Enemies_2
       rect:
         serializedVersion: 2
         x: 134
@@ -222,14 +240,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eae2e888b400f04f0800000000000000
-      internalID: -860468679390908754
+      spriteID: f4175f020baf2574fbf23e9e3d79287b
+      internalID: -1624786853
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss Hit
+      name: Enemies_3
       rect:
         serializedVersion: 2
         x: 0
@@ -243,14 +261,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce9c46d5cbc7ab190800000000000000
-      internalID: -7945901444079236628
+      spriteID: 76b25d1d9ad672a4cb9ffc35d998ae61
+      internalID: -1142919741
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy C
+      name: Enemies_4
       rect:
         serializedVersion: 2
         x: 67
@@ -264,14 +282,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8515d6a968f02b80800000000000000
-      internalID: -8421458170528590454
+      spriteID: a693cfc7b253b014d8800be2807940e8
+      internalID: 374937936
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy B
+      name: Enemies_5
       rect:
         serializedVersion: 2
         x: 100
@@ -282,17 +300,23 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -12, y: 12}
+        - {x: -12, y: 5}
+        - {x: -2, y: -12}
+        - {x: 2, y: -12}
+        - {x: 12, y: 5}
+        - {x: 12, y: 12}
       tessellationDetail: 0
       bones: []
-      spriteID: 403d85e4b6c9310f0800000000000000
-      internalID: -1147401495359466748
+      spriteID: 768447a56c200c8458171660fa67c486
+      internalID: 1040208643
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy A
+      name: Enemies_6
       rect:
         serializedVersion: 2
         x: 125
@@ -306,14 +330,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9edd06f65ab36c470800000000000000
-      internalID: 8414478535512612329
+      spriteID: fafe361635f16c04b903b8908368eee0
+      internalID: -1709460137
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy C Hit
+      name: Enemies_7
       rect:
         serializedVersion: 2
         x: 67
@@ -327,14 +351,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2411e64b25da8330800000000000000
-      internalID: 3714015224569861163
+      spriteID: c8160d703cef31c46b8586d7549034c5
+      internalID: 189331684
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy B Hit
+      name: Enemies_8
       rect:
         serializedVersion: 2
         x: 100
@@ -345,17 +369,23 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -12, y: 12}
+        - {x: -12, y: 5.687092}
+        - {x: -1.3802643, y: -12}
+        - {x: 1.3364258, y: -12}
+        - {x: 12, y: 5.9747353}
+        - {x: 12, y: 12}
       tessellationDetail: 0
       bones: []
-      spriteID: ea74ea1de65822390800000000000000
-      internalID: -7844560889915226194
+      spriteID: a11d0389ed3eac04998167aeb52eaf54
+      internalID: -1176452326
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy A Hit
+      name: Enemies_9
       rect:
         serializedVersion: 2
         x: 125
@@ -369,8 +399,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c88031598f0a0c30800000000000000
-      internalID: 4326287474489854147
+      spriteID: 87947f3b8e75c1c42a7ae451763c3078
+      internalID: 479531533
       vertices: []
       indices: 
       edges: []
@@ -386,16 +416,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Boss 0: 2192450021786810173
-      Boss 1: -7537196482120660328
-      Boss 2: -860468679390908754
-      Boss Hit: -7945901444079236628
-      Enemy A: 8414478535512612329
-      Enemy A Hit: 4326287474489854147
-      Enemy B: -1147401495359466748
-      Enemy B Hit: -7844560889915226194
-      Enemy C: -8421458170528590454
-      Enemy C Hit: 3714015224569861163
+      Enemies_0: -791339951
+      Enemies_1: 1555298197
+      Enemies_2: -1624786853
+      Enemies_3: -1142919741
+      Enemies_4: 374937936
+      Enemies_5: 1040208643
+      Enemies_6: -1709460137
+      Enemies_7: 189331684
+      Enemies_8: -1176452326
+      Enemies_9: 479531533
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
